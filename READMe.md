@@ -5,7 +5,7 @@
 |Endpoint|Method|Description|Example JSON valid|Example JSON invalid|
 |-|-|-|-|-|
 |[/member/register](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#sign-up)|POST|Register Member|||
-|/member/login|POST|Login member|||
+|[/member/login](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#sign-in)|POST|Login member|||
 |/product/list|GET|Get product list|||
 |/product/id|GET|Get product detail|||
 |/bucket/add|POST|Create product bucket|||
