@@ -1,11 +1,23 @@
-## Assignments for Java Boot Camp
+# Assignments for Java Boot Camp
 * [Week 1 :: Design and Develop RESTful API with Spring Boot](https://github.com/up1/assignment-java-boot-camp/wiki/Week-01)
 
-#How to run test
+## API Endpoint List (In progress)
+|Endpoint|Method|Description|Example JSON valid|Example JSON invalid|
+|-|-|-|-|-|
+|/member/register|POST|Register Member|||
+|/member/login|POST|Login member|||
+|/product/list|GET|Get product list|||
+|/product/id|GET|Get product detail|||
+|/bucket/add|POST|Create product bucket|||
+|/bucket/id|GET|Get product in bucket|||
+|/bucket/id|PUT|Add product to bucket|||
+|/bucket/id|DELETE|Delete product in bucket|||
+|/payment/channel|GET|Get payment channel in list|||
+|/payment/register|GET|Add payment by bucket|||
+|/payment/add|GET|Add payment by bucket|||
 
-#API Endpoint List
 
-#Sequence Diagram for Shopping
+## Sequence Diagram for Shopping
 
 ```mermaid
 sequenceDiagram
