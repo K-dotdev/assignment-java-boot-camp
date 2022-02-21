@@ -4,18 +4,19 @@
 ## API Endpoint List (In progress)
 |Endpoint|Method|Description|Example JSON valid|Example JSON invalid|
 |-|-|-|-|-|
-|[/member/register](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#sign-up)|POST|Register Member|||
+|[/member/register](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#sign-up)|POST|Register Member|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#response-valid)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#response-invalid)|
 |[/member/login](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#sign-in)|POST|Login member|||
-|/product/list|GET|Get product list|||
-|/product/id|GET|Get product detail|||
+|[/product/list/:seachtext](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#product-list)|GET|Get product list by text|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#response-valid-2)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#response-invalid-2)|
+|/product/:id|GET|Get product detail|||
 |/bucket/add|POST|Create product bucket|||
-|/bucket/id|GET|Get product in bucket|||
-|/bucket/id|PUT|Add product to bucket|||
-|/bucket/id|DELETE|Delete product in bucket|||
+|/bucket/:id|GET|Get product in bucket|||
+|/bucket/:id|PUT|Add product to bucket|||
+|/bucket/:id|DELETE|Delete product in bucket|||
 |/payment/channel|GET|Get payment channel in list|||
-|/payment/register|GET|Add payment by bucket|||
-|/payment/add|GET|Add payment by bucket|||
+|/payment/checkout|POST|Checkout with payment info|||
+|/payment/:id/summary|GET|Get payment summary by bucket|||
 
+## Flow
 
 ## Sequence Diagram for Shopping
 
