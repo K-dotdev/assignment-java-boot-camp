@@ -3,6 +3,7 @@
 
 #How to run test
 
+#API Endpoint List
 
 #Sequence Diagram for Shopping
 
@@ -14,39 +15,59 @@ sequenceDiagram
     participant B as Bucket
     participant M as Member
     participant PM as Payment
-    participant S as Summary
     User->>+A: Search product name
     A->>+P: Get product lists
     P-->>-A: Return list of product
     A-->>-User: Show list of product
-    User->>+A: Click product detail
-    A->>+P: Get product detail
+    User->>A: Click product detail
+    activate A
+    A->>P: Get product detail
+    activate P
     P->>A: Return Product detail
-    A->>User: Show Product detail
+    deactivate P
+    A-->>User: Show Product detail
+    deactivate A
     User->>A: Add product to bucket
+    activate A
     A->>+B: Add item to bucket
     B-->>-A: Return items list in bucket
+    A-->>User: Show items list in bucket
     User->>A: Remove product to bucket
     A->>+B: Remove item to bucket
     B-->>-A: Return items list in bucket
+    A-->>User: Show items list in bucket
+    deactivate A
+    
     User->>A: Check out items
+    activate A
     A->>+M: Check User data
     alt is not member
         M-->>-A: Return Member not found
         A-->>User: Show register form
         User->>A: Fill Data to form
         A->>M: Save user data
+        activate M
         M-->>A: Return Member data
+        deactivate M
     else is member
         M-->>A: Return Member data
     end
+    A-->>User: Show Member data
+    deactivate A
+    User->>A: Go to payment page
+    activate A
     A->>PM: Get Payment Channel
+    activate PM
     PM-->>A: Return payment Channel
+    deactivate PM
     A-->>User: Show Payment Page
+    deactivate A
     User->>A: Fill data
+    activate A
     A->>PM: Check out
+    activate PM
     PM-->>A: Return Summary
+    deactivate PM
     A-->>User: Show Summary
+    deactivate A
 ```
-
-#API Endpoint List
