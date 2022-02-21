@@ -4,7 +4,7 @@
 ## API Endpoint List (In progress)
 |Endpoint|Method|Description|Example JSON valid|Example JSON invalid|
 |-|-|-|-|-|
-|/member/register|POST|Register Member|||
+|[/member/register](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#sign-up)|POST|Register Member|||
 |/member/login|POST|Login member|||
 |/product/list|GET|Get product list|||
 |/product/id|GET|Get product detail|||
@@ -74,7 +74,7 @@ sequenceDiagram
     deactivate PM
     A-->>User: Show Payment Page
     deactivate A
-    User->>A: Fill data
+    User->>A: Fill data and check out
     activate A
     A->>PM: Check out
     activate PM
