@@ -4,17 +4,17 @@
 ## API Endpoint List (In progress)
 |Endpoint|Method|Description|Example JSON valid|Example JSON invalid|
 |-|-|-|-|-|
-|[/member/register](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#sign-up)|POST|Register Member|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#response-valid)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#response-invalid)|
-|[/member/login](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#sign-in)|POST|Login member|||
+|[/member/register](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#member-address)|POST|Register Member|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#response-valid)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#response-invalid)|
 |[/product/list/:seachtext](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#product-list)|GET|Get product list by text|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-valid)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-invalid)|
 |[/product/:id](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#product-detail)|GET|Get product detail|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-valid-1)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-invalid-1)|
 |[/bucket/add](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#add-item-to-bucket)|POST|Create product bucket|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-valid)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-invalid)|
 |[/bucket/:id](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#get-item-list-from-bucket)|GET|Get product in bucket|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-valid-1)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-invalid-1)|
 |[/bucket/:id](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#update-item-in-bucket)|PUT|Add product to bucket|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-valid-2)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-invalid-2)|
 |[/bucket/:id]()|DELETE|Delete product in bucket|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-valid-3)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-invalid-3)|
-|/payment/channel|GET|Get payment channel in list|||
-|/payment/checkout|POST|Checkout with payment info|||
-|/payment/:id/summary|GET|Get payment summary by bucket|||
+|[/payment/checkout](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Payment-API#payment-confirm)|POST|Checkout with payment info|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Payment-API#response-valid)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Payment-API#response-invalid)|
+|[/payment/invoice/:invoiceId](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Payment-API#invoice-summary)|GET|Get payment invoice summary by bucket|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Payment-API#response-valid-1)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Payment-API#response-invalid-1)|
+| :x: [/member/login](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#sign-in)|POST|Login member|||
+| :x: /payment/channel|GET|Get payment channel in list|||
 
 ## Flow
 
