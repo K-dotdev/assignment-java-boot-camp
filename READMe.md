@@ -16,7 +16,6 @@
 | :x: [/member/login](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#sign-in)|POST|Login member|||
 | :x: /payment/channel|GET|Get payment channel in list|||
 
-## Flow
 
 ## Sequence Diagram for Shopping
 
@@ -83,4 +82,21 @@ sequenceDiagram
     deactivate PM
     A-->>User: Show Summary
     deactivate A
+```
+
+## Flow (TBD)
+```mermaid
+graph TD
+    A(Start) --> B[Search items]
+    B -->|Get Product list| C[Show Product list]
+    C --> D[Click to see detail]
+    D -->|Get Product detail| E[Show Product detail]
+    E -->F[Add Product to Bucket]
+    F -->|Add Product in Bucket|G[Show Product in Bucket]
+    G -->H[Check out]
+    H -->I[Fill Shipping Address]
+    I -->J[Fill Payment info]
+    J -->K[Confirm Purchase]
+    K -->L[Show Invoice]
+    L -->M(End)
 ```
