@@ -8,10 +8,10 @@
 |[/member/login](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#sign-in)|POST|Login member|||
 |[/product/list/:seachtext](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#product-list)|GET|Get product list by text|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-valid)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-invalid)|
 |[/product/:id](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#product-detail)|GET|Get product detail|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-valid-1)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-invalid-1)|
-|/bucket/add|POST|Create product bucket|||
-|/bucket/:id|GET|Get product in bucket|||
-|/bucket/:id|PUT|Add product to bucket|||
-|/bucket/:id|DELETE|Delete product in bucket|||
+|[/bucket/add](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#add-item-to-bucket)|POST|Create product bucket|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-valid)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-invalid)|
+|[/bucket/:id](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#get-item-list-from-bucket)|GET|Get product in bucket|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-valid-1)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-invalid-1)|
+|[/bucket/:id](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#update-item-in-bucket)|PUT|Add product to bucket|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-valid-2)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-invalid-2)|
+|[/bucket/:id]()|DELETE|Delete product in bucket|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-valid-3)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Bucket-API#response-invalid-3)|
 |/payment/channel|GET|Get payment channel in list|||
 |/payment/checkout|POST|Checkout with payment info|||
 |/payment/:id/summary|GET|Get payment summary by bucket|||
