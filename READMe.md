@@ -4,10 +4,10 @@
 ## API Endpoint List (In progress)
 |Endpoint|Method|Description|Example JSON valid|Example JSON invalid|
 |-|-|-|-|-|
-|[/member/register](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#sign-up)|POST|Register Member|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#response-valid)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#response-invalid)|
-|[/member/login](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#sign-in)|POST|Login member|||
-|[/product/list/:seachtext](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#product-list)|GET|Get product list by text|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#response-valid-2)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/API-Endpoint#response-invalid-2)|
-|/product/:id|GET|Get product detail|||
+|[/member/register](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#sign-up)|POST|Register Member|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#response-valid)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#response-invalid)|
+|[/member/login](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Member-API#sign-in)|POST|Login member|||
+|[/product/list/:seachtext](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#product-list)|GET|Get product list by text|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-valid)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-invalid)|
+|[/product/:id](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#product-detail)|GET|Get product detail|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-valid-1)|[JSON](https://github.com/K-dotdev/assignment-java-boot-camp/wiki/Product-API#response-invalid-1)|
 |/bucket/add|POST|Create product bucket|||
 |/bucket/:id|GET|Get product in bucket|||
 |/bucket/:id|PUT|Add product to bucket|||
