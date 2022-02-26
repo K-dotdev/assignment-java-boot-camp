@@ -5,12 +5,12 @@ import javax.persistence.Id;
 
 @Entity
 public class Product{
+	@Id
+	private int productId;
 	private int priceValidUntil;
 	private String priceCurrency;
 	private double reviewRate;
 	private String productImage;
-	@Id
-	private int productId;
 	private String productDetail;
 	private int lowPrice;
 	private int reviewCount;
